@@ -132,3 +132,39 @@ a {
   color: #fff;
   font-size: 30px;
 }
+
+/* ba-team-member */
+
+.ba-team-member {
+  width: 100%;
+  height: 333px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+.ba-team-member__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/*  info member*/
+
+.ba-team-member__info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  background-color: #7beec85c;
+  transform: translateY(-100%);
+  transition: transform .4s;
+}
+.ba-team-member:hover .ba-team-member__info {
+  transform: translateY(0);
+}
