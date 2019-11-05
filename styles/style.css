@@ -27,6 +27,88 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+ .ba-menu-btn {
+  width: 30px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+.ba-menu-btn__line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.ba-menu-btn__line:nth-child(2) {
+  width: 50%;
+}
+.ba-menu-btn__line:nth-child(3) {
+  width: 23px;
+}
+/* ba-menu-block */
+.ba-menu-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #b0c0c0; 
+  transform: translateY(0);
+  z-index: 5;
+  transition: transform .4s;
+  z-index: 5;
+}
+#menuOpen:checked ~ .ba-menu-block {
+  transform: translateY(100%);
+}
+.ba-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ba-menu__item {
+  opacity: 0;
+  font-size: 1.5em;
+  margin-right: 2vw;
+  transform: translateY(-50vh);
+  transition: transform .5s ease, opacity .2s;
+}
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item {
+  transform: none;
+  opacity: 1;
+}
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:first-child {
+ transition-delay: .75s; 
+}
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(2) {
+ transition-delay: .85s; 
+}
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(3) {
+ transition-delay: .95s; 
+}
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(4) {
+ transition-delay: 1.05s; 
+}
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(5) {
+ transition-delay: 1.15s; 
+}
+
+.ba-menu__item:last-child {
+  margin-right: 0;
+}
+.ba-section {
+  padding-top: 120px;
+  padding-bottom: 10px;
+}
 .ba-hero {
   background-color: #c1c1c1;
   background-image: url(../image/Layer4.jpg);
@@ -35,13 +117,16 @@ a {
   min-height: 500px;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  padding-top: 70px; 
+  padding-bottom: 0;
 }
+
 .ba-hero-wrapper {
   text-align: center; 
 }
 .ba-logo {
-  font-size: .8888rem;
+  font-size: 1.125rem;
   margin: 0;
   text-transform: uppercase;
 }
@@ -83,6 +168,7 @@ a {
   width: 2.26em;
   background-color: #7beec7;
   left: -1px;
+  top: 1rem;
   bottom: 0;
 }
 .ba-info__title span {
@@ -105,9 +191,7 @@ a {
 .ba-info__text ol {
   margin-top: 0;
 }
-.ba-section {
-  padding-top: 130px;
-}
+
 .ba-section__header {
   text-align: center;
   padding-bottom: 5.25rem;
