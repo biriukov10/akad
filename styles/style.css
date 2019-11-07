@@ -105,8 +105,12 @@ a {
 .ba-menu__item:last-child {
   margin-right: 0;
 }
+.ba-about {
+  padding-top: 118px;
+  padding-left: 1px;
+}
 .ba-section {
-  padding-top: 120px;
+  padding-top: 198px;
   padding-bottom: 10px;
 }
 .ba-hero {
@@ -121,7 +125,10 @@ a {
   padding-top: 70px; 
   padding-bottom: 0;
 }
-
+.ba-section-hero {
+  padding-top: 72px;
+  padding-left: 18px;
+}
 .ba-hero-wrapper {
   text-align: center; 
 }
@@ -194,7 +201,7 @@ a {
 
 .ba-section__header {
   text-align: center;
-  padding-bottom: 5.25rem;
+  padding-bottom: 2.7rem;
 } 
 
 /* ba-benefits section */
@@ -219,11 +226,17 @@ a {
 }
 
 /* ba-team-member */
+.ba-team {
+  padding-top: 92px;
+}
 .ba-team p,
 .ba-benefits p {
   display: inline-block;
   width: 100%;
-  max-width: 500px;
+  max-width: 662px;
+}
+.ba-team-list {
+  padding-top: 20px; 
 }
 
 .ba-team-member {
@@ -292,22 +305,26 @@ a {
 /* footer */
 .ba-footer {
   background-color: #7beec7;
-  padding: 50px 0;
+  padding: 10px 0 0 14px;
 }
 .ba-footer__title {
   color: #fff;
   font-size: 1.875rem;
+  line-height: 45px;
 }
 .ba-subscribe {
   background-color: #fff;
-  padding: 18px 21px;
+  padding: 32px 26px;
 }
 .ba-subscribe__title {
   font-size: 1.5rem;
   color: #000;
+  line-height: 30px;
 }
 .ba-subscribe__desc {
+  line-height: 19px;
   font-size: 0.875rem;
+  padding-bottom: 17px;
 }
 .ba-button {
   display: inline-block;
