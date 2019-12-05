@@ -12,16 +12,17 @@ link.textContent = ' Company';
 
 // start 2 task
 let title = document.querySelectorAll('.ba-benefit__title span');
-title[0].style.color = 'red';
-title[1].style.color = 'red';
-title[2].style.color = 'red';
+for (let i = 0; i < title.length - 3; i++) {
+  title[i].style.color = 'red';
+}
+// title[0].style.color = 'red';
+// title[1].style.color = 'red';
+// title[2].style.color = 'red';
 // end task 2
 
 // start task 3
 
 let team = document.querySelectorAll('.ba-team-member img');
 for (let i = 0; i < team.length; i++) {
-  let src = team[i].setAttribute('src', 'shorturl.at/nsuFK');
-  console.log(src);
-
+  team[i].setAttribute('src', 'shorturl.at/nsuFK');
 }
